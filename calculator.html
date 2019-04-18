@@ -12,6 +12,10 @@ num.value = Math.sin(num.value);
 function potencia(n_potencia) {
 var num = document.getElementById("n1");
 num.value = Math.pow(num.value, n_potencia);
+}
+function inverso() {
+var num = document.getElementById("n1");
+num.value = 1/num.value;
 }	
 </script>
 </head>
@@ -20,9 +24,12 @@ num.value = Math.pow(num.value, n_potencia);
 Number:
 <input type="text" id="n1">
 <p>
+
 	<button onclick="potencia(2)"> x^2 </button>
 	<button onclick="cube()"> x^3 </button>
 	<button onclick="potencia(4)"> x^4 </button>
 	<button onclick="seno()"> sin(x) </button>
+	<button onclick="inverso()"> 1/x </button>
+
 </p>
 </html>
